@@ -1,0 +1,37 @@
+//html
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    Your HTML code goes here. Write JavaScript code in JAVASCRIPT tab.
+  </body>
+</html>
+
+//css
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+//js
+
+let person = {
+  firstName: "Rahul",
+  lastName: "Attuluri",
+  age: 28,
+  "1": "value1",
+  "my choice": "value2",
+};
+
+let a = "firstName";
+let { gender, age } = person;
+
+console.log(person.firstName);
+
+console.log(person["gender"]);
+
+console.log(person[a]);
+
+console.log(person.a);
+
+console.log(gender);
+
+console.log(age);
