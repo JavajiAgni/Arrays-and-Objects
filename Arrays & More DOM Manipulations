@@ -1,0 +1,48 @@
+//html
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div id="myContainer"></div>
+  </body>
+</html>
+
+
+//css
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.heading {
+  color: blue;
+  font-family: "Caveat";
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+
+//js
+
+
+ let h1Element = document.createElement("h1");
+h1Element.textContent = "Web Technologies";
+
+let containerElement = document.getElementById("myContainer");
+containerElement.appendChild(h1Element);
+
+let btnElement = document.createElement("button");
+btnElement.textContent = "Change Heading and Add Styles";
+containerElement.appendChild(btnElement);
+
+btnElement.onclick = function(){
+  h1Element.textContent = "4.0 Technologies";
+  h1Element.classList.add("heading");
+};
+
+let removeStylesBtnElement = document.createElement("button");
+removeStylesBtnElement.textContent = "Remove Styles";
+containerElement.appendChild(removeStylesBtnElement);
+
+removeStylesBtnElement.onclick = function(){
+  h1Element.classList.remove("heading");
+};
