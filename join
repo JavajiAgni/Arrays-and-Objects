@@ -1,0 +1,5 @@
+//js
+let arr = ["Wind", "Water", "Fire"];
+let combinedString = arr.join(" ");
+console.log(combinedString);
+//
